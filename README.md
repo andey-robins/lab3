@@ -28,9 +28,10 @@ When n = 170, the product is 7.25742*10^306
 When n = 171, the product is inf(inity)
 
 Answer #6
-The harmonic series diverges, and as a result, the sum for a sufficiently large n should be infinity.
-As n grows larger and larger, the value calculated in the float falls further and further behind the value calculated in the double. For instance, when n = 10 000 000, the double = 16.6953 and the float = 15.4037
-Since the float stores long numbers with less precision than the double, it makes sense that the value would not be as accurate as the double with tries to store all of the information it can have at the cost of using more memory.
+The expected value of the function should be 1 in theory. Some calculators produce strange results when multiplying 1/3 by 3 for instance. In this case, 0.33333333... * 3 = 1 in reality, but could equal 0.9999999... if a computer does poorly.
+In my experimentation though, I was unable to find a number that behaved in this way. I tried 3, 5, 54893, as well as many others including primes, composites, odd numbers, even numbers, square numbers, and everything in between. I always had a result of 1.
+This could be due to the command prompt simply rounding the output results of long repeating decimals, it could be the data type rounding itself due to the length of repeating numbers, or it could be the compiler catching this mathematical operation and clearing it up.
+Regardless, my results turned out as expected.
 
 Answer #7
 The puzzling code segment executes the loop one additional time, printing out "i = 4.4" when it shouldn't according to the loop.
