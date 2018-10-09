@@ -53,7 +53,7 @@ int main(){
   cin >> q;
   double dAdded = dAdder(q);
   float fAdded = fAdder(q);
-  cout << "The sum of the ratio (1/n) * n is " << dAdded << " as a double and " << fAdded << " as a float." << endl;
+  cout << "The sum of the ratio (1/n) * n - 1.0 is " << dAdded << " as a double and " << fAdded << " as a float." << endl;
 
   // // puzzle function for question 7
   // puzzle();
@@ -122,7 +122,7 @@ float fAdder(long n){
 
   float ratio = 1.f / n;
 
-  return ratio * n;
+  return ratio * n - 1.f;
 }
 
 //code segment for question 6
@@ -131,7 +131,7 @@ double dAdder(long n){
 
   double ratio = 1.0 / n;
 
-  return ratio * n;
+  return ratio * n - 1.0;
 }
 
 //code segment for question 7

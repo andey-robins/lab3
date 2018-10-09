@@ -29,9 +29,8 @@ When n = 171, the product is inf(inity)
 
 Answer #6
 The expected value of the function should be 1 in theory. Some calculators produce strange results when multiplying 1/3 by 3 for instance. In this case, 0.33333333... * 3 = 1 in reality, but could equal 0.9999999... if a computer does poorly.
-In my experimentation though, I was unable to find a number that behaved in this way. I tried 3, 5, 54893, as well as many others including primes, composites, odd numbers, even numbers, square numbers, and everything in between. I always had a result of 1.
-This could be due to the command prompt simply rounding the output results of long repeating decimals, it could be the data type rounding itself due to the length of repeating numbers, or it could be the compiler catching this mathematical operation and clearing it up.
-Regardless, my results turned out as expected.
+In my experimentation, an input of 987654321 illustrates this problem excellently. When that value above is input into the program, the output as a float = 0; however, the value of the double = -1.11022*10^-16.
+An incredibly small number, but still one that is not equal to 0.
 
 Answer #7
 The puzzling code segment executes the loop one additional time, printing out "i = 4.4" when it shouldn't according to the loop.
